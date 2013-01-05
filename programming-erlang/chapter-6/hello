@@ -1,0 +1,2 @@
+#!/bin/sh
+erl -noshell -pa /Users/charlietanksley/code/books/programming-erlang/chapter-6 -s hello start -s init stop
