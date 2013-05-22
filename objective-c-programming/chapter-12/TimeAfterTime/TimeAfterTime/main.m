@@ -22,12 +22,26 @@ int main(int argc, const char * argv[])
 
         NSDate *myBirth = [g dateFromComponents:comps];
 
-        NSDate *now = [NSDate date];
+        NSDate *now = [[NSDate alloc] init];
         double timeSinceMyBirth = [now timeIntervalSinceDate:myBirth];
 
         NSLog(@"I was born on %@.", myBirth);
         NSLog(@"It has been %f seconds since I was born.", timeSinceMyBirth);
 
+        NSCalendar *cal = [NSCalendar currentCalendar];
+        NSUInteger day = [cal ordinalityOfUnit:NSDayCalendarUnit
+                                        inUnit:NSMonthCalendarUnit
+                                       forDate:now];
+        NSLog(@"This is day %lu of the month", day);
+
+        NSTimeZone *timezone = [NSTimeZone systemTimeZone];
+        BOOL dst = [timezone isDaylightSavingTime];
+
+        if (dst == 1) {
+            NSLog(@"It is DST");
+        } else {
+            NSLog(@"Not DST");
+        }
     }
     return 0;
 }
