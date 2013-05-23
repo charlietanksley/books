@@ -42,6 +42,11 @@ int main(int argc, const char * argv[])
         } else {
             NSLog(@"Not DST");
         }
+
+        NSHost *currentHost = [NSHost currentHost];
+        NSString *localizedName = [currentHost localizedName];
+
+        NSLog(@"My computer's localized name is %@.", localizedName);
     }
     return 0;
 }
