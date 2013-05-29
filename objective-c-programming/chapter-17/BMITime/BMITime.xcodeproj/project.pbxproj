@@ -10,6 +10,8 @@
 		6DB529E61754B2B1007FFDF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB529E51754B2B1007FFDF5 /* Foundation.framework */; };
 		6DB529E91754B2B1007FFDF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB529E81754B2B1007FFDF5 /* main.m */; };
 		6DB529ED1754B2B1007FFDF5 /* BMITime.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6DB529EC1754B2B1007FFDF5 /* BMITime.1 */; };
+		6DB529F51754B355007FFDF5 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB529F41754B355007FFDF5 /* Person.m */; };
+		6DB52A1517560502007FFDF5 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB52A1417560502007FFDF5 /* Employee.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,10 @@
 		6DB529E81754B2B1007FFDF5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6DB529EB1754B2B1007FFDF5 /* BMITime-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BMITime-Prefix.pch"; sourceTree = "<group>"; };
 		6DB529EC1754B2B1007FFDF5 /* BMITime.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = BMITime.1; sourceTree = "<group>"; };
+		6DB529F31754B355007FFDF5 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		6DB529F41754B355007FFDF5 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		6DB52A1317560502007FFDF5 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		6DB52A1417560502007FFDF5 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +54,10 @@
 		6DB529D91754B2B1007FFDF5 = {
 			isa = PBXGroup;
 			children = (
+				6DB52A1317560502007FFDF5 /* Employee.h */,
+				6DB52A1417560502007FFDF5 /* Employee.m */,
+				6DB529F31754B355007FFDF5 /* Person.h */,
+				6DB529F41754B355007FFDF5 /* Person.m */,
 				6DB529E71754B2B1007FFDF5 /* BMITime */,
 				6DB529E41754B2B1007FFDF5 /* Frameworks */,
 				6DB529E31754B2B1007FFDF5 /* Products */,
@@ -140,6 +150,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DB529E91754B2B1007FFDF5 /* main.m in Sources */,
+				6DB529F51754B355007FFDF5 /* Person.m in Sources */,
+				6DB52A1517560502007FFDF5 /* Employee.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
